@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: yellowgreen;
+        }
+
+        .main {
+            height: 60vh;
+            width: 100vw;
+            background-color: rgb(197, 203, 187);
+        }
+
+        .header {
+            height: 8%;
+            width: 100vw;
+            background-color: rgb(255, 209, 192);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+
+        .my-name {
+            font-size: 30px;
+            margin-right: 40%;
+
+        }
+
+        .headerr {
+            margin-left: 80px;
+            font-size: 20px;
+        }
+
+        .second-header {
+            height: 11%;
+            width: 100vw;
+            background-color: rgb(249, 233, 227);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .row-one {
+            height: 90%;
+            width: 100vw;
+            background-color: rgb(249, 233, 227);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        /* second-page */
+        .page-two {
+            height: 100%;
+            width: 100%;
+            background-color: yellowgreen;
+
+        }
+
+        .row-two {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(249, 233, 227);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .row-three {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(249, 233, 227);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .card-one {
+            height: 80%;
+            width: 30%;
+            background-color: yellow;
+        }
+
+        .card-two {
+            height: 80%;
+            width: 30%;
+            background-color: rgb(186, 186, 178);
+        }
+
+        .img {
+            height: 80%;
+            width: 100%;
+            background-color: blueviolet;
+        }
+
+        .text {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(255, 209, 192);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .button {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(255, 209, 192);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* button */
+        .view-project {
+            height: 40px;
+            width: 120px;
+            font-size: 18px;
+            margin-left: 15px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.153);
+           background-color: #92487A;
+           color: white;
+        }
+.view-code{
+    height: 40px;
+            width: 120px;
+            font-size: 18px;
+            margin-left: 15px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.153);
+           background-color:#92487A;
+           color: white;
+}
+        .img-hw {
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (min-width:350px) and (max-width:450px) {
+            body {
+                height: 100vh;
+                width: 100%;
+                margin: 0%;
+                padding: 0%;
+
+            }
+
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                background-color: yellowgreen;
+            }
+
+            .main {
+                height: 115vh;
+                width: 100vw;
+                background-color: rgb(197, 203, 187);
+            }
+
+            .header {
+                height: 7%;
+                width: 100vw;
+                background-color: rgb(255, 209, 192);
+                display: flex;
+                flex-direction: row;
+                font-size: 25px;
+                gap: 40px;
+            }
+
+            .my-name {
+                display: none;
+                margin-right: 0%;
+            }
+
+            .headerr {
+                margin-left: 10px;
+                gap: 0px;
+            }
+
+
+            .second-header {
+                height: 8%;
+                width: 100vw;
+                background-color: rgb(249, 233, 227);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+            }
+
+            .row-one {
+                height: 85%;
+                width: 100vw;
+                background-color: rgb(249, 233, 227);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            /* second-page */
+            .page-two {
+                height: 200vh;
+                width: 100%;
+                background-color: yellowgreen;
+
+            }
+
+            .row-two {
+                height: 50%;
+                width: 100%;
+                background-color: rgb(249, 233, 227);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .row-three {
+                height: 50%;
+                width: 100%;
+                background-color: rgb(1, 2, 0);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .card-one {
+                height: 45%;
+                width: 80%;
+                background-color: yellow;
+            }
+
+            .card-two {
+                height: 45%;
+                width: 80%;
+                background-color: rgb(186, 186, 178);
+            }
+
+            .img {
+                height: 75%;
+                width: 100%;
+                background-color: blueviolet;
+            }
+
+            .text {
+                height: 10%;
+                width: 100%;
+                background-color: aqua;
+            }
+
+            .button {
+                height: 15%;
+                width: 100%;
+                background-color: rgb(119, 103, 133);
+            }
+
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 5, 75);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main">
+            <div class="header" id="home">
+                <div class="my-name">Arsalan Pathan</div>
+                <a href="./index.html#home">
+                    <div class="headerr">Home</div>
+                </a>
+                <a href="./index.html#About">
+                    <div class="headerr">About</div>
+                </a>
+                <a href="./index.html#Project">
+                    <div class="headerr">Project</div>
+                </a>
+                <a href="./index.html#contact">
+                    <div class="headerr">Contact</div>
+                </a>
+            </div>
+            <div class="second-header">HTML  PROJECT</div>
+            <div class="row-one">
+                <div class="card-one">
+                    <div class="img"><img class="img-hw"
+                            src="https://www.pngitem.com/pimgs/m/465-4658380_online-school-admission-form-with-custom-design-online.png"
+                            alt=""></div>
+                    <div class="text">Form</div>
+                    <div class="button">
+                       <a href="./fortfolio-pages.html/new-form.html"> <button class="view-project">view-project</button></a>
+                        <button class="view-code">view-code</button>
+                    </div>
+                </div>
+                <div class="card-two">
+                    <div class="img"><img class="img-hw"
+                            src="https://us.123rf.com/450wm/ganpanjaneedesign/ganpanjaneedesign2402/ganpanjaneedesign240200032/227791322-calendario-de-escritorio-2025-dise%C3%B1o-junio-2025-plantilla-calendario-2025-plantilla-planificador.jpg?ver=6"
+                            alt=""></div>
+                    <div class="text">Table</div>
+                    <div class="button">
+                     <a href="./fortfolio-pages.html/ two-table.html">   <button class="view-project">view-project</button></a>
+                        <button class="view-code">view-code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-two">
+            <div class="row-two">
+                <div class="card-one">
+                    <div class="img"><img class="img-hw"
+                            src="https://img.freepik.com/premium-photo/cricket-player-batting-action-clipartcricket-player-playing-cricket-vector-illustration_1276103-229.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt=""></div>
+                    <div class="text">Cricket Information</div>
+                    <div class="button">
+                    <a href="./fortfolio-pages.html/new-cricket.html">    <button class="view-project">view-project</button></a>
+                        <button class="view-code">view-code</button>
+                    </div>
+                </div>
+                <div class="card-two">
+                    <div class="img"><img class="img-hw"
+                            src="https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?cs=srgb&dl=pexels-serpstat-177219-572056.jpg&fm=jpg"
+                            alt=""></div>
+                    <div class="text">Computer Information</div>
+                    <div class="button">
+                      <a href="./fortfolio-pages.html/computer.html">  <button class="view-project">view-project</button></a>
+                        <button class="view-code">view-code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row-three">
+                <div class="card-one">
+                    <div class="img"><img class="img-hw"
+                            src="https://www.imf.org/external/pubs/ft/fandd/2020/06/images/frieden-1600.jpg"
+                            alt=""></div>
+                    <div class="text">Politics</div>
+                    <div class="button">
+                       <a href="./fortfolio-pages.html/calender.html"> <button class="view-project">view-project</button></a>
+                        <button class="view-code">view-code</button>
+                    </div>
+                </div>
+                <div class="card-two">
+                    <div class="img"><img class="img-hw"
+                            src="https://cdn.educba.com/academy/wp-content/uploads/2023/07/Basic-HTML-Tags2-1.jpg"
+                            alt=""></div>
+                    <div class="text">All Tags</div>
+                    <div class="button">
+                        <button class="view-project">view-project</button>
+                        <button class="view-code">view-code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
