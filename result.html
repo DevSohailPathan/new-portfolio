@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 70vh;
+            width: 40vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.236);
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            border: 2px solid rgb(176, 176, 176);
+        }
+
+        input {
+            width: 80%;
+            height: 26px;
+        }
+
+        button {
+            height: 50px;
+            width: 60%;
+        }
+
+        table {
+
+            width: 60%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.196);
+            border-collapse: collapse;
+            text-align: center;
+            display: none;
+            
+
+        }
+
+
+        th {
+            border: 1px solid rgb(255, 255, 255);
+            height: 50px;
+            width: 5%;
+            background-color: rgb(1, 1, 95);
+            color: white;
+
+        }
+
+        td {
+            border: 0.1px solid rgb(0, 0, 0);
+            height: 50px;
+            width: 5%;
+            background-color: rgb(239, 255, 250);
+        }
+
+        .section-one {
+           background-color: rgb(255, 236, 229);
+            color: rgb(3, 3, 79);
+        }
+
+        .section-two {
+           background-color: rgb(220, 255, 220);
+            color: rgb(3, 3, 79);
+        }
+
+        .section-three {
+           background-color:rgb(215, 239, 255) ;
+            color: rgb(3, 3, 79);
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="box" id="first-page">
+            <br>
+            <label for=""> 1 . English :</label><br>
+            <input type="text" placeholder="Enter Mark ...." id="input-one"><br>
+            <label for=""> 2 . Hindi :</label><br>
+            <input type="text" placeholder="Enter Mark ...." id="input-two"><br>
+            <label for="">3 . Marathi :</label><br>
+            <input type="text" placeholder="Enter Mark ...." id="input-three"><br>
+            <label for=""> 4 . Math :</label><br>
+            <input type="text" placeholder="Enter Mark ...." id="input-four"><br>
+            <label for=""> 5 . Science:</label><br>
+            <input type="text" placeholder="Enter Mark ...." id="input-five"><br>
+            <br><br>
+            <button onclick="calculate()">Submit</button>
+
+        </div>
+        <table id="table">
+            <tr>
+                <th>NO.</th>
+                <th>Subject</th>
+                <th>Mark</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>English</td>
+                <td id="mark-one"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Hindi</td>
+                <td id="mark-two"></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Marathi</td>
+                <td id="mark-three"></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Science</td>
+                <td id="mark-four"></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Math</td>
+                <td id="mark-five"></td>
+            </tr>
+
+            <tr>
+                <td class="section-one" colspan="2">Total Mark</td>
+                <td class="section-one" id="total-result"></td>
+
+
+            </tr>
+            <tr>
+                <td class="section-two" colspan="2">Percentage</td>
+                <td class="section-two" id="Percentage"></td>
+
+
+            </tr>
+            <tr>
+                <td class="section-three" colspan="2">Result</td>
+                <td class="section-three" id="result"></td>
+
+
+
+            </tr>
+
+        </table>
+    </div>
+    <script>
+        function calculate() {
+
+            let a = Number(document.getElementById("input-one").value)
+            let b = Number(document.getElementById("input-two").value)
+            let c = Number(document.getElementById("input-three").value)
+            let d = Number(document.getElementById("input-four").value)
+            let e = Number(document.getElementById("input-five").value)
+
+
+
+            let f = document.getElementById("mark-one").innerHTML = a;
+            let g = document.getElementById("mark-two").innerHTML = b;
+            let j = document.getElementById("mark-three").innerHTML = c
+            let h = document.getElementById("mark-four").innerHTML = d;
+            let i = document.getElementById("mark-five").innerHTML = e;
+
+            let total = a + b + c + d + e;
+
+            let calculate = total / 500;
+            let percent = calculate * 100;
+
+            document.getElementById("total-result").innerHTML = total;
+            document.getElementById("Percentage").innerHTML = percent + " " + "%";
+            document.getElementById("first-page").style.display = "none"
+            document.getElementById("table").style.display = "block"
+
+            if (percent >= 35) {
+                document.getElementById("result").innerHTML = "Pass"
+            }
+            else {
+                document.getElementById("result").innerHTML = "Fail"
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>
